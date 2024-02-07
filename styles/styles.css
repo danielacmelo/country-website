@@ -20,12 +20,15 @@
 # Base
 --------------------------------------------------------------*/
 
+/* * {
+padding: 0;
+margin: 0;
+} */
+
 /* Typography
 --------------------------------------------- */
 body { 
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
 	color: #FAF9F6;
 	background-color: #3D3D3D;
@@ -37,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-	
+	font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -69,25 +72,20 @@ table {
 
 /* Links
 --------------------------------------------- */
-a {
-	text-decoration: none;
-	
-}
-
+a,
 a:visited {
-	
+	color: #FAF9F6;
+	text-decoration: none;
 }
 
-a:hover {
-	
+a:hover { 
+	color: #D1D1D1;	
 }
 
-a:focus {
-	
-}
-
+a:focus,
 a:active {
-	
+	outline: 1px dotted #D1D1D1;
+
 }
 
 
@@ -95,6 +93,7 @@ a:active {
 # Layout
 --------------------------------------------------------------*/
 .site-wrapper {
+	/* This is for very large screens */
 	max-width: 120rem;
 	margin: 0 auto;
 }
@@ -107,14 +106,20 @@ a:active {
 /* Header
 --------------------------------------------- */
 .site-header {
-	padding: 1rem 1rem 0;
+	padding: 0 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	/* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; */
+	background-color: #3D3D3D;
 }
 
 .site-logo {
-	width: 2rem;
+	width: 2rem;    /*verificar */
 	margin: 1rem;
 }
 
@@ -131,13 +136,6 @@ a:active {
 	padding: 0;
 	margin:0;
 	text-align: center;
-	display: none;
-	position: absolute;
-	top: 4.5rem;
-	left: 0;
-	right: 0;
-	z-index: 10000;
-	/* background-color: ; */
 }
 
 .site-navigation a {
@@ -145,6 +143,16 @@ a:active {
 	padding: 1rem;
 	font-size: 1.25rem;
 	text-decoration: none;
+}
+
+/* START -- STYLES FOR MOBILE MENU */
+.site-navigation ul {
+	display: none;
+	position: absolute;
+	top: 4.5rem;  /* Matches the height of the .site-header */
+	left: 0;
+	right: 0;
+	background-color: #3D3D3D;
 }
 
 .menu-toggle {
@@ -159,9 +167,16 @@ a:active {
 	outline: 1px dotted;
 }
 
+.menu-toggle svg path {
+	fill: #FAF9F6;
+}
+
 .site-navigation.toggled ul {
 	display: block;
+	background-color: #3D3D3D;
 }
+
+/* END -- STYLES FOR MOBILE MENU */
 
 @media (min-width: 37.5rem) {
 
@@ -178,12 +193,14 @@ a:active {
 	.site-navigation.toggled ul {
 		display: flex;
 		justify-content: flex-end;
+		/* START - Remove Mobile Menu Styles */
 		position: relative;
 		top: 0;
+		/* END - Remove Mobile Menu Styles  */
 	}
 
 	.site-navigation a {
-		line-height: 4.5rem; 
+		line-height: 4.5rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
 		padding: 0 1rem;
 	}
 
@@ -193,6 +210,26 @@ a:active {
 
 /* Main
 --------------------------------------------- */
+/* Home */
+
+.home-banner {
+	position: relative;
+}
+
+.home-text {
+	position: absolute;
+	top: 20%;
+	left:0;
+	right: 0;
+	transform: translateY(-50%);
+	margin: 0;
+	padding-left: 1rem;
+	} 
+
+.home-text h1 {
+	font-size: 1rem;
+
+}
 
 
 /* Footer
