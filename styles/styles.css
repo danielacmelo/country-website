@@ -129,6 +129,12 @@ a:active {
 	display: block;
 }
 
+.site-name {
+	display: block;
+	font-size: .9375rem;
+	padding: 
+}
+
 .site-navigation {
 	padding: 0 1rem;
 }
