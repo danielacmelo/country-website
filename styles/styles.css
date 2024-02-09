@@ -30,6 +30,7 @@ margin: 0;
 body { 
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.5;
+	font-size: 1rem;
 	color: #FAF9F6;
 	background-color: #3D3D3D;
 }
@@ -41,6 +42,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 }
 
 p {
@@ -79,12 +81,12 @@ a:visited {
 }
 
 a:hover { 
-	color: #D1D1D1;	
+	color: #E8E8E8;	
 }
 
 a:focus,
 a:active {
-	outline: 1px dotted #D1D1D1;
+	outline: 1px dotted #E8E8E8;
 
 }
 
@@ -115,7 +117,7 @@ a:active {
     left: 0;
     right: 0;
     z-index: 1000; */
-	background-color: #3D3D3D;
+	background-color: #4B4B4B;
 }
 
 .site-logo {
@@ -141,8 +143,7 @@ a:active {
 .site-navigation a {
 	display: block;
 	padding: 1rem;
-	font-size: 1.25rem;
-	text-decoration: none;
+	font-size: .9375rem;
 }
 
 /* START -- STYLES FOR MOBILE MENU */
@@ -152,7 +153,7 @@ a:active {
 	top: 4.5rem;  /* Matches the height of the .site-header */
 	left: 0;
 	right: 0;
-	background-color: #3D3D3D;
+	background-color: #4B4B4B;
 }
 
 .menu-toggle {
@@ -173,7 +174,7 @@ a:active {
 
 .site-navigation.toggled ul {
 	display: block;
-	background-color: #3D3D3D;
+	background-color: #4B4B4B;
 }
 
 /* END -- STYLES FOR MOBILE MENU */
@@ -210,32 +211,109 @@ a:active {
 
 /* Main
 --------------------------------------------- */
-/* Home */
+Home
+
+/* .home-main{
+	display: flex;
+	width: auto;
+	height: 75vh;
+} */
 
 .home-banner {
-	position: relative;
+	display: flex;
+	width: auto;
+	height: 75vh;
+
 }
+
+
+.home-video {
+	width: 100%;
+	height: 75vh;
+	order: -2;
+	position: relative;
+	object-fit: cover;
+	margin: 0;
+
+}
+
 
 .home-text {
 	position: absolute;
-	top: 20%;
-	left:0;
-	right: 0;
+	bottom: 6rem;
 	transform: translateY(-50%);
 	margin: 0;
 	padding-left: 1rem;
+	font-weight: 300;
+	line-height: 1;
+	z-index: 100;
 	} 
 
-.home-text h1 {
-	font-size: 1rem;
+@media (min-width: 50em) {
+
+	.home-banner h1 {
+		font-size: 4rem;
+	}	
+
+	.home-banner p {
+		font-size: 1.2rem;
+	}
 
 }
+	
+
+
+@media (min-width: 112.5em) {
+
+	.home-banner h1 {
+		font-size: 6rem;
+	}	
+
+	.home-banner p {
+		font-size: 2rem;
+	}
+
+}
+	
+
+/* Credits*/
+
+.credits-main {
+	text-align: center;
+	padding: 0 2rem 3rem;
+}
+
+.credits-main h1, 
+.credits-main h2 {
+	font-weight: 500;
+}
+
+
+.credits-list {
+	padding-top: 0.5rem;
+}
+
+.credits-list a {
+	display:block;
+	font-weight: 300;
+	padding-bottom: 1rem;
+	color: #C2D3DB;
+}
+
 
 
 /* Footer
 --------------------------------------------- */
 
+
+
+footer {
+	background-color: #4B4B4B;
+}
+
 .site-footer {
-	padding: .3125rem;
+	padding: 0.5rem;
 	text-align: center;
+	line-height: 1;
+	font-size: small;
 }
