@@ -131,8 +131,7 @@ a:active {
 
 .site-name {
 	display: block;
-	font-size: .9375rem;
-	padding: 
+	font-size: .9375rem; 
 }
 
 .site-navigation {
@@ -286,7 +285,7 @@ Home
 
 .credits-main {
 	text-align: center;
-	padding: 0 2rem 3rem;
+	padding: 2rem 0 3rem;
 }
 
 .credits-main h1, 
@@ -294,9 +293,13 @@ Home
 	font-weight: 500;
 }
 
+.credits-main h1 {
+	padding-bottom: 1rem;
+}
+
 
 .credits-list {
-	padding-top: 0.5rem;
+	padding-bottom: 1.125rem;
 }
 
 .credits-list a {
@@ -312,14 +315,10 @@ Home
 --------------------------------------------- */
 
 
-
-footer {
-	background-color: #4B4B4B;
-}
-
 .site-footer {
 	padding: 0.5rem;
 	text-align: center;
 	line-height: 1;
 	font-size: small;
+	background-color: #4B4B4B;
 }
