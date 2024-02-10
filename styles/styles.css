@@ -45,8 +45,12 @@ h6 {
 	font-weight: 500;
 }
 
-p {
-	
+h1 {
+	font-size: 1.5625rem;
+}
+
+h2 {
+	font-size: 1.25rem
 }
 
 
@@ -216,7 +220,7 @@ a:active {
 }
 
 
-@media (min-width: 112.5em) {
+@media (min-width: 75em) {
 
 	.site-name,
 	.site-navigation a {
@@ -234,19 +238,17 @@ a:active {
 
 .home-main {
 	width: auto;
-	height: 70vh;
+	height: 75vh;
 }
-
 
 .home-video {
 	width: 100%;
-	height: 70vh;
+	height: 75vh;
 	order: -2;
 	position: relative;
 	object-fit: cover;
 	margin: 0;
 }
-
 
 .home-text {
 	position: absolute;
@@ -261,6 +263,16 @@ a:active {
 	line-height: 1;
 	} 
 
+
+	.home-main h1 {
+		font-size: 2rem;
+	}
+	
+	.home-main p {
+		font-size: 1rem;
+	}
+	
+
 @media (min-width: 50em) {
 
 	.home-main h1 {
@@ -270,7 +282,6 @@ a:active {
 	.home-main p {
 		font-size: 1.2rem;
 	}
-
 }
 	
 
@@ -279,7 +290,6 @@ a:active {
 
 	.home-text {
 		padding-left: 5rem;
-
 	}
 
 	.home-main h1 {
@@ -295,6 +305,18 @@ a:active {
 
 /* Explore*/
 
+
+@media (min-width: 112.5em) {
+
+	h1 {
+		font-size: 1.875rem;
+	}
+	
+	h2 {
+		font-size: 1.5625rem;
+	}
+
+}
 
 
 
@@ -334,8 +356,17 @@ blockquote {
 	font-weight: 300;
 	padding-bottom: 1rem;
 	color: #C2D3DB;
+	font-size: .875rem;
 }
 
+
+@media (min-width: 112.5em) {
+
+	.credits-list a {
+		font-size: 1rem;
+	}
+
+}
 
 
 /* Footer
