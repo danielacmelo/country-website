@@ -28,7 +28,7 @@ margin: 0;
 /* Typography
 --------------------------------------------- */
 body { 
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	line-height: 1.5;
 	font-size: 1rem;
 	color: #FAF9F6;
@@ -332,12 +332,14 @@ a:active {
     width: 95%;
     object-fit: cover;
     margin: 0 auto 3rem;
+	padding-top: 1.25rem ;
 }
 
 .history-article p {
     display: block;
     width: 100%;
 }
+
 
 
 /* Galery*/
