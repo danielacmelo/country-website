@@ -323,6 +323,23 @@ a:active {
 /* History*/
 
 
+.history-main {
+	margin: 2rem 2rem 3rem;
+}
+
+.history-img {
+    display: block;
+    width: 95%;
+    object-fit: cover;
+    margin: 0 auto 3rem;
+}
+
+.history-article p {
+    display: block;
+    width: 100%;
+}
+
+
 /* Galery*/
 
 blockquote {
@@ -334,7 +351,7 @@ blockquote {
 
 .credits-main {
 	text-align: center;
-	padding: 2rem 0 3rem;
+	margin: 2rem 0 3rem;
 }
 
 .credits-main h1, 
@@ -345,7 +362,6 @@ blockquote {
 .credits-main h1 {
 	padding-bottom: 1rem;
 }
-
 
 .credits-list {
 	padding-bottom: 1.125rem;
