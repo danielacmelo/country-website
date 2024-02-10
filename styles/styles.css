@@ -309,6 +309,10 @@ a:active {
 
 /* Ciites*/
 
+.cities-main {
+	margin: 2rem 1rem 0;
+}
+
 .cities-article {
 	max-width: 30rem;
 	margin: 2rem auto;
