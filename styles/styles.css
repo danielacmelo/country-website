@@ -121,7 +121,7 @@ a:active {
 }
 
 .site-logo {
-	width: 2rem;    /*verificar */
+	width: 2rem;    
 	margin: 1rem;
 }
 
@@ -213,22 +213,31 @@ a:active {
 }
 
 
+@media (min-width: 112.5em) {
+
+
+	.site-header {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+
+	.site-name,
+	.site-navigation a {
+		font-size: 1.25rem;
+	}
+
+	
+}
+
 
 /* Main
 --------------------------------------------- */
-Home
 
-/* .home-main{
-	display: flex;
+/* Home */
+
+.home-main {
 	width: auto;
 	height: 75vh;
-} */
-
-.home-banner {
-	display: flex;
-	width: auto;
-	height: 75vh;
-
 }
 
 
@@ -239,47 +248,55 @@ Home
 	position: relative;
 	object-fit: cover;
 	margin: 0;
-
 }
 
 
 .home-text {
 	position: absolute;
 	bottom: 6rem;
+	left: 0;
+	right: 0;
+	z-index: 100;
 	transform: translateY(-50%);
 	margin: 0;
 	padding-left: 1rem;
 	font-weight: 300;
 	line-height: 1;
-	z-index: 100;
 	} 
 
 @media (min-width: 50em) {
 
-	.home-banner h1 {
+	.home-main h1 {
 		font-size: 4rem;
 	}	
 
-	.home-banner p {
+	.home-main p {
 		font-size: 1.2rem;
 	}
 
 }
 	
 
-
 @media (min-width: 112.5em) {
 
-	.home-banner h1 {
+
+	.home-text {
+		padding-left: 5rem;
+
+	}
+
+	.home-main h1 {
 		font-size: 6rem;
 	}	
 
-	.home-banner p {
+	.home-main p {
 		font-size: 2rem;
 	}
 
 }
-	
+
+
+
 
 /* Credits*/
 
@@ -315,6 +332,7 @@ Home
 --------------------------------------------- */
 
 
+
 .site-footer {
 	padding: 0.5rem;
 	text-align: center;
@@ -322,3 +340,4 @@ Home
 	font-size: small;
 	background-color: #4B4B4B;
 }
+
