@@ -120,10 +120,13 @@ a:active {
 	background-color: #4B4B4B;
 }
 
+
+/* verificar  */
 .site-logo {
 	width: 2rem;    
-	margin: 1rem;
-}
+	margin-right: 0.5rem;     
+ }
+
 
 .site-logo img {
 	display: block;
@@ -215,18 +218,12 @@ a:active {
 
 @media (min-width: 112.5em) {
 
-
-	.site-header {
-		padding-left: 5rem;
-		padding-right: 5rem;
-	}
-
 	.site-name,
 	.site-navigation a {
 		font-size: 1.25rem;
 	}
 
-	
+
 }
 
 
@@ -237,13 +234,13 @@ a:active {
 
 .home-main {
 	width: auto;
-	height: 75vh;
+	height: 70vh;
 }
 
 
 .home-video {
 	width: 100%;
-	height: 75vh;
+	height: 70vh;
 	order: -2;
 	position: relative;
 	object-fit: cover;
@@ -296,7 +293,20 @@ a:active {
 }
 
 
+/* Explore*/
 
+
+
+
+/* History*/
+
+
+/* Galery*/
+
+blockquote {
+    width: 80%;
+    margin: 3rem auto 2rem;
+}
 
 /* Credits*/
 
@@ -340,4 +350,5 @@ a:active {
 	font-size: small;
 	background-color: #4B4B4B;
 }
+
 
