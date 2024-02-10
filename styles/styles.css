@@ -47,6 +47,8 @@ h6 {
 
 h1 {
 	font-size: 1.5625rem;
+	text-align: center;
+	padding-bottom: 1rem;
 }
 
 h2 {
@@ -266,6 +268,8 @@ a:active {
 
 	.home-main h1 {
 		font-size: 2rem;
+		text-align: left;
+		padding-bottom: 0rem;
 	}
 	
 	.home-main p {
@@ -303,7 +307,48 @@ a:active {
 }
 
 
-/* Explore*/
+/* Ciites*/
+
+.cities-article {
+	max-width: 30rem;
+	margin: 2rem auto;
+	padding: 20px;
+	flex-grow: 0;
+}
+
+.cities-image{
+
+}
+
+.cities-text {
+	padding: 1rem;
+}
+
+/* .cities-name {
+	font-size: 1.25rem;
+} */
+
+/* .cities-summary {
+	font-size: 1rem;
+	margin: 0;
+} */
+
+
+@media (min-width: 50em) {
+
+	
+	.cities-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.cities.article {
+		margin: 1rem;
+	}
+
+}
+
 
 
 @media (min-width: 112.5em) {
@@ -327,12 +372,6 @@ a:active {
 	margin: 2rem 1rem 0;
 	padding: 0 1.5rem;
 	min-width: 320px;
-}
-
-.history-main h1 {
-	padding-bottom: 1rem;
-	text-align: center;
-
 }
 
 .history-img {
@@ -390,15 +429,6 @@ blockquote {
 	margin: 2rem 1rem 3rem;
 }
 
-.credits-main h1, 
-.credits-main h2 {
-	font-weight: 500;
-}
-
-.credits-main h1 {
-	padding-bottom: 1rem;
-}
-
 .credits-list {
 	padding-bottom: 1.125rem;
 }
@@ -423,7 +453,6 @@ blockquote {
 
 /* Footer
 --------------------------------------------- */
-
 
 
 .site-footer {
