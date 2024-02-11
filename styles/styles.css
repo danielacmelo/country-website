@@ -320,8 +320,8 @@ a:active {
 	flex-grow: 0;
 }
 
-.cities-image{
-
+.cities-image {
+	border-radius: 5px;
 }
 
 .cities-text {
