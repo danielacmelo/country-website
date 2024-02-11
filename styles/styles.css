@@ -20,10 +20,6 @@
 # Base
 --------------------------------------------------------------*/
 
-/* * {
-padding: 0;
-margin: 0;
-} */
 
 /* Typography
 --------------------------------------------- */
@@ -119,16 +115,9 @@ a:active {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; */
 	background-color: #4B4B4B;
 }
 
-
-/* verificar  */
 .site-logo {
 	width: 2rem;    
 	margin-right: 0.5rem;     
@@ -167,7 +156,7 @@ a:active {
 .site-navigation ul {
 	display: none;
 	position: absolute;
-	top: 4.5rem;  /* Matches the height of the .site-header */
+	top: 4.5rem;  
 	left: 0;
 	right: 0;
 	background-color: #4B4B4B;
@@ -219,7 +208,7 @@ a:active {
 	}
 
 	.site-navigation a {
-		line-height: 4.5rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
+		line-height: 4.5rem; 
 		padding: 0 1rem;
 	}
 
