@@ -437,6 +437,7 @@ a:active {
 			gap: 1rem;
 			justify-content: center;
 			align-items: stretch;
+			row-gap: 4rem;
 		}
 	
 		.fjords-gallery img {
