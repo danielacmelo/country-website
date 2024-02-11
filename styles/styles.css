@@ -49,6 +49,7 @@ h1 {
 	font-size: 1.5625rem;
 	text-align: center;
 	padding-bottom: 1rem;
+	padding-top: 2rem;
 }
 
 h2 {
@@ -59,14 +60,17 @@ h2 {
 /* Elements
 --------------------------------------------- */
 
+
 table {
 	width: 45%;
 	border-collapse: collapse;
 	margin:1rem auto;
 	font-size: .875rem;
 	padding: 0 2rem;
+	margin: 4rem auto;
   }
   
+
   th, td {
 	padding: 6px;
 	text-align: left;
@@ -141,7 +145,9 @@ a:active {
 }
 
 .site-navigation {
-	padding: 0 1rem;
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
 }
 
 .site-navigation ul {
@@ -186,6 +192,7 @@ a:active {
 .site-navigation.toggled ul {
 	display: block;
 	background-color: #4B4B4B;
+	z-index: 1;
 }
 
 /* END -- STYLES FOR MOBILE MENU */
@@ -237,7 +244,6 @@ a:active {
 
 .home-main {
 	width: auto;
-	height: 75vh;
 }
 
 .home-video {
@@ -274,6 +280,15 @@ a:active {
 	}
 	
 
+	blockquote {
+		width: 80%;
+		margin: 1rem auto;
+		font-size: small;
+		line-height: 1;
+	}
+	
+	
+
 @media (min-width: 50em) {
 
 	.home-main h1 {
@@ -306,10 +321,6 @@ a:active {
 
 /* Cities*/
 
-.cities-main {
-	margin: 2rem 1rem 0;
-}
-
 .cities-article {
 	max-width: 30rem;
 	margin: 2rem auto;
@@ -324,15 +335,6 @@ a:active {
 .cities-text {
 	padding: 1rem;
 }
-
-/* .cities-name {
-	font-size: 1.25rem;
-} */
-
-/* .cities-summary {
-	font-size: 1rem;
-	margin: 0;
-} */
 
 
 @media (min-width: 50em) {
@@ -369,11 +371,11 @@ a:active {
 /* History*/
 
 
-.history-main {
-	margin: 2rem 1rem 0;
+ .history-main {
 	padding: 0 1.5rem;
 	min-width: 320px;
-}
+} 
+
 
 .history-img {
     display: block;
@@ -398,8 +400,8 @@ a:active {
 		display: grid;
 		align-items: start;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto repeat(4, minmax(300px, auto));
-		gap: 0.5rem;
+		grid-template-rows: repeat(5, minmax(300px, auto));
+		gap: 0.5rem 2rem;
 
 	}	
 	
@@ -411,33 +413,65 @@ a:active {
 	.history-img-4 {
 		grid-column: 1/2;
 		grid-row: 4/5
-		}
+	}
+}
+
+@media (min-width: 75em) {
+	.history-main {
+		width: 60rem;
+		margin: auto;
+	}
 }
 	
 
 
 /* Fjords*/
 
-blockquote {
-    width: 80%;
-    margin: 3rem auto 2rem;
+.fjords-main {
+	margin-top: 2rem;
+}
+
+.fjords-gallery img {
+	margin: 0.5rem auto;
+	border-radius: 5px;
 }
 
 
-@media (min-width: 75em) {
+@media (min-width: 50em) {
 
 	
-	blockquote {
-		width: 40%;
-		margin: 3rem auto 2rem;
-		font-size: ;
+	.cities-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
-	
 
+	.cities.article {
+		margin: 1rem;
+
+	}
 
 }
 
+@media (min-width: 68em) {
 
+	.fjords-gallery {
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+			grid-template-rows: auto;
+			grid-auto-rows: 200px;
+			gap: 1rem;
+			justify-content: center;
+			align-items: stretch;
+		}
+	
+		.fjords-gallery img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 
 
 
