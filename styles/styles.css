@@ -283,21 +283,23 @@ a:active {
 	blockquote {
 		width: 80%;
 		margin: 1rem auto;
-		font-size: small;
-		line-height: 1;
+		line-height: 1.2;
 	}
 	
-	
+	blockquote p {
+		font-size: small;
+	}
 
 @media (min-width: 50em) {
 
-	.home-main h1 {
+	.home-text h1 {
 		font-size: 4rem;
 	}	
 
-	.home-main p {
+	.home-text p {
 		font-size: 1.2rem;
 	}
+
 }
 	
 
@@ -308,11 +310,11 @@ a:active {
 		padding-left: 5rem;
 	}
 
-	.home-main h1 {
+	.home-text h1 {
 		font-size: 6rem;
 	}	
 
-	.home-main p {
+	.home-text p {
 		font-size: 2rem;
 	}
 
